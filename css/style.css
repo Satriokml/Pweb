@@ -1,0 +1,17 @@
+
+h1 {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: aquamarine;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: rgb(14, 9, 9);
+}
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aquamarine;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:grey ;
+}
+label{
+    font-size: large;
+    color: black;
+}

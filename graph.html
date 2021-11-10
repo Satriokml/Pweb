@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Graph</title>
+    <!-- Meta Ends  -->
+
+    <!-- CSS Starts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- CSS Ends -->
+</head>
+
+<body>
+
+    <!-- Main Starts-->
+    <br><br>
+    <div class="container">
+        <div class="row center">
+            <div class="col s4">
+                <a href="index.html"><img class="responsive-img" src="./images/S.png"></a>
+            </div>
+            <div class="col s4 offset-s4" style=" margin-top:70px; ">
+                <a class="waves-effect waves-light btn disabled"><i class="material-icons right">cloud</i>Tanggal Hari Ini</a>
+            </div>
+        </div><br><br>
+
+        <div class="row center">
+            <div class="col s12">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+    </div>
+    <!-- Main Ends-->
+
+    <!-- Scripts Starts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="js/materialize.js "></script>
+    <script src="js/init.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['1', '2', '3', '4', '5', '6','7','8','9','10'],
+                datasets: [{
+                    label: 'Trend of Reasons',
+                    data: [12, 19, 3, 5, 2, 3, 5, 7, 2, 10],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <!-- Scripts Ends-->
+
+</body>
+
+</html>
